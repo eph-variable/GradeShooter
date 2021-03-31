@@ -1,0 +1,13 @@
+def human(names, *subjects, **grades):
+	reference_list = {}
+	for i, b in zip(subjects, grades):
+		reference_list[i] = grades[b]
+
+
+	print (names, reference_list)
+
+
+
+human("Person 1", "Computer Science", "Topology", "Botany", grades1=98, grades2=89, grades3=78)
+human("Person 2", "Applied Mathematics", "Sociology", "Polsci", grades1=99, grades2=79, grades3=75 )
+human("Person 3", "Polsci", "Physics", "Literature", grades1=78, grades2=94, grades3=85)
